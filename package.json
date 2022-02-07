@@ -1,11 +1,11 @@
 {
-  "name": "@kiwi/kiwi-app",
-  "version": "1.0.1",
+  "name": "kiwisom-app",
+  "version": "1.0.0",
   "author": "yuan.ping",
-  "description": "【Kiwi前端工程化框架】Kiwi应用",
+  "description": "【Kiwisom前端工程化框架】Kiwisom应用",
   "keywords": [
-    "kiwi",
-    "kiwi-app"
+    "kiwisom",
+    "kiwisom-app"
   ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -20,7 +20,7 @@
     "build": "rm -rf ./lib; node_modules/.bin/tsc",
     "pub": "sh publish.sh \"update\"",
     "pub:commit": "sh publish.sh $1",
-    "gen:icons": "kiwi --generate-icons styled-components/icon-resource/iconfont.json"
+    "gen:icons": "kiwisom --generate-icons styled-components/icon-resource/iconfont.json"
   },
   "homepage": "https://gitlab.17zuoye.net/yuan.ping/kiwi-app/tree/v0.1",
   "repository": {
