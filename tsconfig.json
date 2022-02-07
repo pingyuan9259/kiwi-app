@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "@kiwi/kiwi-app/*": ["./*"],
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

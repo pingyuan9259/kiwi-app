@@ -1,0 +1,65 @@
+{
+  "name": "@kiwi/kiwi-app",
+  "version": "1.0.0",
+  "author": "yuan.ping",
+  "description": "【Kiwi前端工程化框架】Kiwi应用",
+  "keywords": [
+    "kiwi",
+    "kiwi-app"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "core",
+    "components",
+    "styled",
+    "types",
+    "index.ts"
+  ],
+  "scripts": {
+    "build": "rm -rf ./lib; node_modules/.bin/tsc",
+    "pub": "sh publish.sh \"update\"",
+    "pub:commit": "sh publish.sh $1",
+    "gen:icons": "kiwi --generate-icons styled-components/icon-resource/iconfont.json"
+  },
+  "homepage": "https://gitlab.17zuoye.net/yuan.ping/kiwi-app/tree/v0.1",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.17zuoye.net:10022/yuan.ping/kiwi-app.git"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.170",
+    "@types/node": "^15.6.1",
+    "dayjs": "^1.10.7",
+    "lodash": "^4.17.21",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.3",
+    "vue-fragment": "^1.5.2",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.5.1",
+    "vue-styled-components": "^1.6.0",
+    "vuex": "^3.6.2"
+  },
+  "prettier": {
+    "$schema": "http://json.schemastore.org/prettierrc",
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "always",
+    "requirePragma": false,
+    "insertPragma": false,
+    "proseWrap": "preserve",
+    "htmlWhitespaceSensitivity": "css",
+    "endOfLine": "lf"
+  },
+  "license": "ISC"
+}
